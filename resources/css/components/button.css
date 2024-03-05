@@ -1,0 +1,92 @@
+.button{
+    padding: 1.2rem 3.05rem;
+    border: 1px solid var(--main-clr);
+    font-size: 2rem;
+    border-radius: 0.4rem;
+    color: var(--main-clr);
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+@media(min-width: 1024px){
+    .button{
+        min-width: 13.9rem;
+    }
+}
+
+.button:hover{
+    background: #fff;
+    color: var(--main-clr);
+    box-shadow: 0px 0px 7px var(--main-clr);
+}
+
+.button--filled{
+    background: var(--main-clr);
+    color: #fff;
+}
+
+.button--filled:hover{
+    background: #fff;
+    color: var(--main-clr);
+    box-shadow: 0px 0px 7px var(--main-clr);
+}
+
+.button--secondary{
+    padding: 1.7rem 2.9rem;
+}
+
+
+
+.lang-chosen{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    color:  var(--main-clr);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;  
+}
+
+.lang-chosen-active{
+    background: #fff;
+}
+
+.footer-lang-chosen{
+    background: none;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    color:  var(--main-clr);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;  
+}
+
+.footer-lang-chosen-active{
+    background: #fff;
+}
+
+.form-submit{
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    padding: 1.8rem 2.85rem;
+    background: var(--secondary-clr);
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.form-submit:hover{
+    background: #fff;
+    color: var(--secondary-clr);
+    box-shadow: 0px 0px 8px var(--secondary-clr);
+}
+
+.view-all{
+    padding: 0.6rem 3.05rem;
+}
+

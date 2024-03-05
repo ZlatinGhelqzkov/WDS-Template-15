@@ -1,0 +1,51 @@
+h1{
+    display: inline-block;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+@media(min-width: 768px){
+    h1{
+        font-size: 5.8rem;
+    }
+}
+
+h2{
+    font-size: 3.2rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.h2--blue{
+    color: var(--main-clr);
+}
+
+.h2--orange{
+    color: var(--secondary-clr);
+}
+
+h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.h3--blue{
+    color: var(--main-clr);
+}
+
+h4{
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.highlights-title{
+    font-size: 1.9rem;
+    color: var(--neutral-dark-clr);
+    font-weight: 700;
+}
+
+h5{
+    font-size: 2rem;
+}

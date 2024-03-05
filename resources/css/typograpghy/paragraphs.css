@@ -1,0 +1,18 @@
+p{
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.intro-subtitle{
+    max-width: 48rem;
+    font-size: 2.4rem;
+    color: var(--neutral-clr);
+    margin-bottom: 5rem;
+}
+
+.highlights-description{
+    font-size: 1.4rem;
+    max-width: 14rem;
+    color: #898989;
+    font-weight: 300;
+}

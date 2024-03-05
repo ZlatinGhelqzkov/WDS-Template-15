@@ -1,0 +1,42 @@
+.occasions{
+    padding-bottom: 7rem;
+    text-align: center;
+}
+
+.occasions__title{
+    padding: 6.5rem 0rem 5rem;
+}
+
+.occasions__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+@media(min-width: 1200px){
+    .occasions__inner{
+        display: flex;
+        gap: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.occasions-card{
+    position: relative;
+}
+
+.occasions-card-text{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #fff;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 11px rgba(6,6,6,0.26));
+    text-align: center;
+    padding: 1rem 0rem;
+}
+

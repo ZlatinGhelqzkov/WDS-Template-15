@@ -1,0 +1,50 @@
+/*##############################
+############ RESET #############
+##############################*/
+@import url(/resources/css/reset.css);
+
+
+
+/*##############################
+########## TYPOGRAPHY ##########
+##############################*/
+@import url(/resources/css/typograpghy/headings.css);
+@import url(/resources/css/typograpghy/links.css);
+@import url(/resources/css/typograpghy/paragraphs.css);
+
+
+
+/*##############################
+########## COMPONENTS ##########
+##############################*/
+@import url(/resources/css/components/grid.css);
+@import url(/resources/css/components/button.css);
+@import url(/resources/css/components/bg.css);
+@import url(/resources/css/components/calendar.css);
+@import url(/resources/css/components/widgets.css);
+
+
+
+/*##############################
+########## SECTIONS ##########
+##############################*/
+@import url(/resources/css/sections/header.css);
+@import url(/resources/css/sections/intro.css);
+@import url(/resources/css/sections/form-section.css);
+@import url(/resources/css/sections/highlights.css);
+@import url(/resources/css/sections/occasions.css);
+@import url(/resources/css/sections/cities.css);
+@import url(/resources/css/sections/work.css);
+@import url(/resources/css/sections/testimonials.css);
+@import url(/resources/css/sections/sponsors.css);
+@import url(/resources/css/sections/footer.css);
+
+
+:root{
+    --main-clr: #009cff;
+    --secondary-clr: #ff8500;
+    --neutral-clr: #898989;
+    --neutral-dark-clr: #323232;
+    --black-clr: #000000;
+    --star-clr: #ffd131;
+}

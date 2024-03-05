@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hire top talents from the U.S. or worldwide for any scope of entertainment projects.">
+
+    <!--FOR FACEBOOK-->
+    <meta property="og:title" content="TalentHub">
+    <meta property="og:description" content="Hire top talents from the U.S. or worldwide for any scope of entertainment projects.">
+
+    <!--FOR TWITTER-->
+    <meta name="twitter:title" content="TalentHub">
+    <meta name="twitter:description" content="Hire top talents from the U.S. or worldwide for any scope of entertainment projects.">
+
+    
+    <!--CSS AND FONTS-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,700;0,900;1,100&family=Lato:ital,wght@0,400;0,900;1,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <title>TalentHub</title>
+</head>
+
+<body>
+    <main class="main">
+
+
+        <button class="live-chat" aria-label="support live-chat"><img src="/resources/images/live-chat.png" alt="live-chat image"></button>
+
+        <div id="pop-up" class="pop-up">
+
+             <img class="pop-up-img" src="/resources/images/pop-up-avatar.png" alt="pop-up avatar">
+
+             <div class="pop-up-text">
+
+                 <span class="pop-up-msg">Someone from Malaga just booked an event with</span>
+                 <span class="pop-up-performer">Viktor Maximov</span>
+                 <span class="pop-up-booked-time">1 Hour ago</span>
+
+             </div>
+             <button class="pop-up-x-mark" onclick="closePopUp()" aria-label="close pop-up"><img src="/resources/images/x-mark.png" alt="close pop-up"></button>
+
+        </div>
+
+
+        <!--HEADER-->
+        <header class="header">
+
+            <div class="wrapper">
+
+                <div class="header__inner">
+
+                    <div class="header-logo">
+                        <a href="#">
+                            <img src="/resources/images/svg/Logo.svg" alt="company Logo">
+                        </a>
+                    </div>
+
+                    <div class="header-buttons">
+                        <a href="#" class="button header-login">Login</a>
+
+                        <a href="#" class="button button--filled header-register">Register</a>
+
+                        <div class="lang header-lang">
+                            <button class="lang-chosen"><span>EN</span><i
+                                    class="fa-solid fa-angle-down fa-xs"></i></button>
+
+                            <div class="lang-menu-shape"></div>
+                            <ul class="lang-menu">
+                                <li class="lang-item">
+                                    <p class="lang-choice">EN</p>
+                                </li>
+
+                                <li class="lang-item">
+                                    <p class="lang-choice">BG</p>
+                                </li>
+
+                                <li class="lang-item">
+                                    <p class="lang-choice">ES</p>
+                                </li>
+
+                                <li class="lang-item">
+                                    <p class="lang-choice">FR</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </header>
+        <!--HEADER END-->
+
+
+
+        <!--INTRO-->
+        <section class="intro">
+
+            <div class="wrapper">
+
+                <div class="intro__inner">
+
+                    <div class="intro-text">
+                        <h1 class="intro-title">Entertainment <span>Done Better.</span></h1>
+
+                        <p class="intro-subtitle">Hire top talents from the U.S. or worldwide
+                            for any scope of entertainment projects.
+                        </p>
+
+                        <a href="#" class=" button button--filled button--secondary">Browse Talents</a>
+                    </div>
+
+                    <div class="intro-image">
+                        <img src="/resources/images/intro-image.webp" alt="girl with guitar">
+                    </div>
+
+                </div>
+
+                <!--FORM-->
+
+                <form class="form">
+
+                    <!--Radio button group-->
+                    <div class="find-radio-wrapper">
+                        <p>Find A:</p>
+
+                        <div class="find-radio-group radio-group--3">
+
+                            <input type="radio" id="radio-1" name="find" value="Star" class="find__input" checked>
+                            <label for="radio-1" class="find__label">
+                                Star
+                            </label>
+
+                            <input type="radio" id="radio-2" name="find" value="Event" class="find__input">
+                            <label for="radio-2" class="find__label">
+                                Event
+                            </label>
+
+                            <input type="radio" id="radio-3" name="find" value="Place" class="find__input">
+                            <label for="radio-3" class="find__label">
+                                Place
+                            </label>
+
+                            <span class="find__background"></span>
+                        </div>
+                    </div>
+                    <!--Radio Button Group End-->
+
+
+                    <!--FORM ROW-->
+                    <div class="form-row">
+
+                        <div class="input--wrapper">
+                            <label class="form-row-input-label" for="searchField">Find an artist by name:</label>
+                            <input name="search" id="searchField" placeholder="JOHN DOE" class="form-row-input" type="search">
+
+                            <i class="fa-solid fa-magnifying-glass custom-symbol"></i>
+                        </div>
+
+                       
+
+                        <div class="input--wrapper">
+
+                            <div>
+                                <label class="form-row-input-label" for="fromDate">Available From Date:</label>
+                                <input name="fromDate" type="text" id="fromDate" placeholder="Tue, 10/09/24" readonly>
+                                <i class="fa-solid fa-calendar-days custom-symbol"></i>
+                            </div>
+
+                            <div class="from-calendar-dropdown">
+
+                                <div class="from-month-picker">
+
+                                    <div class="from-month-prev" onclick="generateDatesForYear(2024)"> < </div>
+                                    <h2>Jan 2024</h2>
+                                    <div class="from-month-next"> > </div>
+
+                                </div>
+                    
+                                <div class="from-calendar-days">
+                                    <div class="from-weekday">пн</div>
+                                    <div class="from-weekday">вт</div>
+                                    <div class="from-weekday">ср</div>
+                                    <div class="from-weekday">чт</div>
+                                    <div class="from-weekday">пт</div>
+                                    <div class="from-weekday">сб</div>
+                                    <div class="from-weekday">нд</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                         <!--FROM CALENDAR END-->
+
+                        <div class="input--wrapper">
+                            <div>
+                                <label class="form-row-input-label" for="toDate">Available To Date:</label>
+                                <input name="toDate" type="text" id="toDate" placeholder="Wed, 28/09/24" readonly>
+                                <i class="fa-solid fa-calendar-days custom-symbol"></i>
+                            </div>
+
+                            <div class="to-calendar-dropdown">
+
+                                <div class="to-month-picker">
+
+                                    <div class="to-month-prev" onclick="generateDatesForYear(2024)"> < </div>
+                                    <h2>Jan 2024</h2>
+                                    <div class="to-month-next"> > </div>
+
+                                </div>
+                    
+                                <div class="to-calendar-days">
+                                    <div class="to-weekday">пн</div>
+                                    <div class="to-weekday">вт</div>
+                                    <div class="to-weekday">ср</div>
+                                    <div class="to-weekday">чт</div>
+                                    <div class="to-weekday">пт</div>
+                                    <div class="to-weekday">сб</div>
+                                    <div class="to-weekday">нд</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                        <!--TO CALENDAR END-->
+                        <!--FORM ROW END-->
+
+
+                    <!--FORM ROW-->
+                    <div class="form-row">
+
+                        <div class="input--wrapper">
+                            <label class="form-row-input-label" for="city">In City:</label>
+                            <input name="city" id="city" placeholder="London" class="form-row-input" type="search">
+
+                            <i class="fa-solid fa-magnifying-glass custom-symbol"></i>
+                        </div>
+
+                        
+                        <div class="input--wrapper">
+                            <label class="form-row-input-label" for="radius">Within Radius:</label>
+                            <input name="radius" id="radius" placeholder="150" class="form-row-input" type="number">
+
+                            <i class="custom-symbol">KM</i>
+                        </div>
+
+                        
+                        <div class="input--wrapper">
+                          <div class="input-map"><p>See on Map</p><i class="fa-solid fa-map"></i></div>
+                        </div>
+                           
+                    </div> <!--FORM ROW END-->
+
+                    <div class="form-row margin-b-small">
+
+                        <div class="input--wrapper">
+                            <label class="form-row-input-label label--relative" for="category">In Category:</label>
+
+                            <select name="category" id="category"  class="form-row-input">
+                                <option value="dance">DANCE</option>
+                                <option value="dance">SING</option>
+                            </select>
+                        </div>
+
+                        
+                        <div class="input--wrapper">
+                            <label class="form-row-input-label label--relative" for="subcategory">Subcategory:</label>
+                            <select class="select-input" name="subcategory" id="subcategory">
+
+                                <option value="BALLET">BALLET</option>
+                                <option value="BALLET">HIP-HOP</option>
+                                <option value="BALLET">ROCK</option>
+                                <option value="BALLET">JAZZ</option>
+
+                            </select>
+                        </div>
+
+                        
+                        <div class="input--wrapper equipment-wrapper">
+                          <p>Equipment:</p>
+
+                          <div class="equip-options-wrapper">
+
+                            <div class="equip-option">
+                                <input id="full" type="radio" name="equipment" value="Full">
+                                <label for="full">FULL</label>
+                                <div class="check"></div>
+                            </div>
+
+                            <div class="equip-option">
+
+                                <input id="part-equipment" type="radio" name="equipment" value="Part equipment">
+                                <label for="part-equipment">PART EQUIPMENT</label>
+                                <div class="check"></div>
+                            </div>
+
+                            <div class="equip-option">
+                                <input id="none-equipment" type="radio" name="equipment" value="None">
+                                <label for="none-equipment">NONE</label>
+                                <div class="check"></div>
+                            </div>
+                          </div>
+                        </div>
+                           
+                    </div> <!--FORM ROW END-->
+
+                    <div class="form-row">
+                        <button class="form-submit" type="submit">Talent Search</button>
+                    </div>
+
+                </form>
+
+                <!--FORM END-->
+
+            </div>
+
+        </section>
+        <!--INTRO END-->
+
+        <!--HIGHLIGHTS SWIPER-->
+        <section class="highlights">
+            <div class="wrapper">
+
+                <div class="swiper highlights-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide highlights-card">
+                            <div class="highlights-image-wrapper" data-price="$ 150">
+                                <img class="highlights-image"  src="/resources/images/swiper-slide1.png" alt="highlight slide image">
+
+                            </div>
+
+                            <h4 class="highlights-title">Stars's Name</h4>
+
+                            <p class="highlights-description">Lorem ipsum dolor
+                                sit amet, consectetur...
+                            </p>
+
+                            <div class="highlights-rating">
+
+                                <div class="highlights-stars">
+
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star-half rating-star"></i>
+
+                                </div>
+
+                                <span class="highlights-reviews">(4.5 of 95 Reviews)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide highlights-card">
+                            <div class="highlights-image-wrapper" data-price="$ 250">
+                                <img class="highlights-image" src="/resources/images/swiper-slide2.png" alt="highlight slide image">
+
+                            </div>
+
+                            <h4 class="highlights-title">Stars's Name</h4>
+
+                            <p class="highlights-description">Lorem ipsum dolor
+                                sit amet, consectetur...
+                            </p>
+
+                            <div class="highlights-rating">
+
+                                <div class="highlights-stars">
+
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star-half rating-star"></i>
+
+                                </div>
+
+                                <span class="highlights-reviews">(4.5 of 95 Reviews)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide highlights-card">
+                            <div class="highlights-image-wrapper" data-price="$ 150">
+                                <img class="highlights-image" src="/resources/images/swiper-slide3.png" alt="highlight slide image">
+
+                            </div>
+
+                            <h4 class="highlights-title">Stars's Name</h4>
+
+                            <p class="highlights-description">Lorem ipsum dolor
+                                sit amet, consectetur...
+                            </p>
+
+                            <div class="highlights-rating">
+
+                                <div class="highlights-stars">
+
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star-half rating-star"></i>
+
+                                </div>
+
+                                <span class="highlights-reviews">(4.5 of 95 Reviews)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide highlights-card">
+                            <div class="highlights-image-wrapper" data-price="$ 250">
+                                <img class="highlights-image" src="/resources/images/swiper-slide4.png" alt="highlight slide image">
+
+                            </div>
+
+                            <h4 class="highlights-title">Stars's Name</h4>
+
+                            <p class="highlights-description">Lorem ipsum dolor
+                                sit amet, consectetur...
+                            </p>
+
+                            <div class="highlights-rating">
+
+                                <div class="highlights-stars">
+
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star-half rating-star"></i>
+
+                                </div>
+
+                                <span class="highlights-reviews">(4.5 of 95 Reviews)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide highlights-card">
+                            <div class="highlights-image-wrapper" data-price="$ 250">
+                                <img class="highlights-image" src="/resources/images/swiper-slide2.png" alt="highlight slide image">
+
+                            </div>
+
+                            <h4 class="highlights-title">Stars's Name</h4>
+
+                            <p class="highlights-description">Lorem ipsum dolor
+                                sit amet, consectetur...
+                            </p>
+
+                            <div class="highlights-rating">
+
+                                <div class="highlights-stars">
+
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star-half rating-star"></i>
+
+                                </div>
+
+                                <span class="highlights-reviews">(4.5 of 95 Reviews)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide highlights-card">
+                            <div class="highlights-image-wrapper" data-price="$ 250">
+                                <img class="highlights-image" src="/resources/images/swiper-slide2.png" alt="highlight slide image">
+
+                            </div>
+
+                            <h4 class="highlights-title">Stars's Name</h4>
+
+                            <p class="highlights-description">Lorem ipsum dolor
+                                sit amet, consectetur...
+                            </p>
+
+                            <div class="highlights-rating">
+
+                                <div class="highlights-stars">
+
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star-half rating-star"></i>
+
+                                </div>
+
+                                <span class="highlights-reviews">(4.5 of 95 Reviews)</span>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide highlights-card">
+                            <div class="highlights-image-wrapper" data-price="$ 250">
+                                <img class="highlights-image" src="/resources/images/swiper-slide1.png" alt="highlight slide image">
+
+                            </div>
+
+                            <h4 class="highlights-title">Stars's Name</h4>
+
+                            <p class="highlights-description">Lorem ipsum dolor
+                                sit amet, consectetur...
+                            </p>
+
+                            <div class="highlights-rating">
+
+                                <div class="highlights-stars">
+
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star rating-star"></i>
+                                    <i class="fa-solid fa-star-half rating-star"></i>
+
+                                </div>
+
+                                <span class="highlights-reviews">(4.5 of 95 Reviews)</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="highlights-prev"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="highlights-next"><i class="fa-solid fa-angle-right"></i></div>
+
+
+            </div>
+        </section>
+        <!--HIGHLIGHTS SWIPER END-->
+
+        <!--OCCASIONS-->
+        <section class="occasions">
+
+            <div class="bg">
+                <img src="/resources/images/svg/occasions-bg.svg" alt="occasions-bg">
+            </div>
+
+            <div class="wrapper">
+                <h2 class="occasions__title">Occasions</h2>
+                <div class="occasions__inner">
+                    <div class="occasions-card">
+                        <img src="/resources/images/wedding.png" alt="weddings">
+
+                        <div class="occasions-card-text">
+                            <h3 class="h3--blue">Weddings</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="occasions-card">
+                        <img src="/resources/images/parties.png" alt="parties">
+
+                        <div class="occasions-card-text">
+                            <h3 class="h3--blue">Parties</h3>
+                        </div>
+
+                    </div>
+
+                    <div class="occasions-card">
+                        <img src="/resources/images/disco.png" alt="disco">
+
+                        <div class="occasions-card-text">
+                            <h3 class="h3--blue">Disco</h3>
+                        </div>
+                    </div>
+
+                    <div class="occasions-card">
+                        <img src="/resources/images/birthdays.png" alt="birthdays">
+
+                        <div class="occasions-card-text">
+                            <h3 class="h3--blue">Birthdays</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--OCCASIONS END-->
+
+        <!--CITIES-->
+        <section class="cities">
+
+            <div class="wrapper">
+                <div class="cities__head">
+                    <h2 class="h2--blue">Featured Cities</h2>
+                    <a href="#" class="button view-all">View All</a>
+                </div>
+                <div class="cities__body">
+                    <div class="city-card">
+                        <img src="/resources/images/featured-city1.png" alt="London">
+
+                        <h4>London</h4>
+
+                        <p class="city-stats">
+                            769 STARS / 540 EVENTS / 61 PLACES
+                        </p>
+
+                    </div>
+
+                    <div class="city-card">
+
+                        <img src="/resources/images/featured-city2.png" alt="Paris">
+
+                        <h4>Paris</h4>
+
+                        <p class="city-stats">
+                            390 STARS / 293 EVENTS / 39 PLACES
+                        </p>
+
+                    </div>
+
+                    <div class="city-card">
+
+                        <img src="/resources/images/featured-city3.png" alt="Rome">
+
+                        <h4>Rome</h4>
+
+                        <p class="city-stats">
+                            297 STARS / 320 EVENTS / 42 PLACES
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--CITIES END-->
+
+        <!--WORK-->
+        <section class="work">
+            <div class="wrapper">
+                <h2 class="h2--orange">Our Work Proccess</h2>
+
+                <div class="work__inner">
+                    <div class="work-card">
+                        <img src="/resources/images/svg/Shape 1.svg" alt="find">
+                        <span class="work-card-text">FIND</span>
+                    </div>
+
+                    <div class="work-card">
+                        <img src="/resources/images/svg/Shape 2.svg" alt="book">
+                        <span class="work-card-text">BOOK</span>
+                    </div>
+
+                    <div class="work-card">
+                        <img src="/resources/images/svg/Shape 3.svg" alt="act">
+                        <span class="work-card-text">ACT</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--WORK END-->
+        <!--TESTIMONIALS-->
+        <section class="testimonials">
+            <div class="wrapper">
+
+                <img class="accent-image" src="/resources/images/01.png" alt="other people">
+
+                <h2 class="h2--blue">Testimonials</h2>
+
+                <div class="testimonials__inner">
+                    <div class="swiper testimonials-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide testimonials-slide">
+
+                                <img class="testimonials-image" src="/resources/images/image1.webp" alt="testimonials headshot">
+                                <div class="testimonials-content">
+                                    <span class="testimonials-quote-sign">“</span>
+
+                                    <div class="quote-border-wrapper">
+                                        <p class="testimonials-quote">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                               nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                    
+
+                                    <p class="testimonials-author">Lara Croft, Singer</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide testimonials-slide">
+
+                                <img class="testimonials-image" src="/resources/images/intro-image.webp" alt="testimonials headshot">
+                                <div class="testimonials-content">
+                                    <span class="testimonials-quote-sign">“</span>
+
+                                    <div class="quote-border-wrapper">
+                                        <p class="testimonials-quote">
+                                            We need to keep going Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                             Asperiores, temporibus. Ratione dolores id
+                                              fugiat maiores sequi laudantium porro dignissimos magni,
+                                             dolor deserunt ducimus obcaecati culpa vel voluptates! Officiis, adipisci perferendis?
+                                        </p>
+                                    </div>
+                                    
+
+                                    <p class="testimonials-author">Lara Croft, Singer</p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide testimonials-slide">
+
+                                <img class="testimonials-image" src="/resources/images/image1.webp" alt="testimonials headshot">
+                                <div class="testimonials-content">
+                                    <span class="testimonials-quote-sign">“</span>
+
+                                    <div class="quote-border-wrapper">
+                                        <p class="testimonials-quote">
+                                            We need to keep going Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                             Asperiores, temporibus. Ratione dolores id
+                                              fugiat maiores sequi laudantium porro dignissimos magni,
+                                             dolor deserunt ducimus obcaecati culpa vel voluptates! Officiis, adipisci perferendis?
+                                        </p>
+                                    </div>
+                                    
+
+                                    <p class="testimonials-author">Lara Croft, Singer</p>
+
+                                </div>
+
+                            </div>
+
+                       
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="testimonials-prev"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="testimonials-next"><i class="fa-solid fa-angle-right"></i></div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!--TESTIMONIALS END-->
+
+        <!--SPONSORS-->
+        <section class="sponsors">
+            <div class="wrapper">
+                <div class="sponsors__inner">
+
+                    <a href="#">
+                        <img src="/resources/images/svg/facebook.svg" alt="facebook logo">
+                    </a>
+    
+                    <a href="#">
+                        <img src="/resources/images/svg/spotify.svg" alt="spotify logo">
+                    </a>
+    
+                    <a href="#">
+                        <img src="/resources/images/svg/mashable.svg" alt="mashable logo">
+                    </a>
+    
+                    <a href="#">
+                        <img src="/resources/images/svg/microsoft.svg" alt="microsoft logo">
+                    </a>
+    
+                    <a href="#">
+                        <img src="/resources/images/svg/google.svg" alt="google logo">
+                    </a>
+
+                </div>
+                
+            </div>
+        </section>
+        <!--SPONSORS END-->
+
+
+        <!--FOOTER-->
+        <footer class="footer">
+            <div class="bg">
+                <img src="/resources/images/svg/footer-background.svg" alt="orange footer background">
+            </div>
+            <div class="wrapper wrapper--xl">
+
+                <div class="footer__inner">
+                    
+                    <div class="footer-top">
+
+                        <div class="company-table">
+                            <span class="accent-text">Company</span>
+    
+                            <div class="company-lists">
+                                <ul class="company-list">
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">About us</a>
+                                    </li>
+    
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">My Bookings</a>
+                                    </li>
+    
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">Contact us</a>
+                                    </li>
+    
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">Price check promise</a>
+                                    </li>
+    
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">Terms & conditions</a>
+                                    </li>
+                                </ul>
+    
+                                <ul class="company-list">
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">Blog</a>
+                                    </li>
+    
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">FAQ</a>
+                                    </li>
+    
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">Affiliate Program</a>
+                                    </li>
+    
+                                    <li class="company-item">
+                                        <a href="#" class="footer-company-link">Private Policy</a>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="newsletter">
+                            <span class="accent-text">Subscribe to Our Newsletter</span>
+    
+                            <form class="newsletter-form" method="GET">
+                                <input type="email" name="newsletter" placeholder="EMAIL ADDRESS">
+                                <button type="submit" aria-label="submit to newsletter"><img src="/resources/images/svg/paper-plane.svg" alt="send email"></button>
+                            </form>
+    
+                            <div class="footer-social-links">
+                                <a class="footer-social-link" aria-label="Link to Facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a class="footer-social-link" aria-label="Link to Twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                <a class="footer-social-link" aria-label="Link to Google Plus" href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="footer-about">
+    
+                            <span class="accent-text">About TalentJam</span>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                   nisi ut aliquip ex ea commodo consequat.
+                            </p>
+    
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                 eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+    
+    
+                        </div>
+                        
+                    </div>
+                    
+
+            
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            <p>Copyright &copy; 2018 TalentHub. All Rights Reserved.</p>
+                        </div>
+
+                        <div class="lang footer-lang">
+                            <button class="footer-lang-chosen"><span>EN</span><i
+                                    class="fa-solid fa-angle-up fa-xs"></i></button>
+
+                            <div class="footer-lang-menu-shape"></div>
+                            <ul class="footer-lang-menu">
+                                <li class="footer-lang-item">
+                                    <p class="footer-lang-choice">FR</p>
+                                </li>
+
+                                <li class="footer-lang-item">
+                                    <p class="footer-lang-choice">ES</p>
+                                </li>
+
+                                <li class="footer-lang-item">
+                                    <p class="footer-lang-choice">BG</p>
+                                </li>
+
+                                <li class="footer-lang-item">
+                                    <p class="footer-lang-choice">EN</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+        <!--FOOTER END-->
+
+
+
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/104cd21b31.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/resources/js/changeLanguage.js"></script>
+    <script src="/resources/js/closePopup.js"></script>
+    <script src="/resources/js/footerLang.js"></script>
+    <script src="/resources/js/date-generation.js"></script>
+    <script src="/resources/js/fromCalendar.js"></script>
+    <script src="/resources/js/toCalendar.js"></script>
+    <script src="/resources/js/swiper.js"></script>
+
+</body>
+
+</html>

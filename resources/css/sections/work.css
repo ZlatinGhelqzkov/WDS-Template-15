@@ -1,0 +1,46 @@
+.work{
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 12.5rem;
+    border-top: 1px solid rgba(255,133,0,0.15);
+    border-bottom: 1px solid rgba(0, 155,255,0.15);
+}
+
+.work__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7.5rem;
+}
+
+.work-card{
+    position: relative;
+    filter: drop-shadow(-17.714px 20.377px 33px rgba(255,133,0,0.13));
+}
+
+.work-card-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+@media(min-width: 768px){
+    .work-card-text{
+        font-size: 3.5rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .work-card-text{
+        font-size: 5rem;
+    }
+}
+
+.work-card:nth-of-type(2) .work-card-text{
+    transform: translate(-50%, -20%);
+}

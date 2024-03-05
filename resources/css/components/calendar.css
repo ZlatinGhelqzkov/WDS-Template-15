@@ -1,0 +1,78 @@
+.from-calendar-dropdown,
+.to-calendar-dropdown{
+    position: absolute;
+    display: none;
+    padding: 1.5rem;
+    background: #fff;
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+}
+
+.active{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.from-month-picker,
+.to-month-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.from-month-picker h2,
+.to-month-picker h2{
+    font-size: 2rem;
+   color: var(--secondary-clr);
+}
+  
+.from-month-prev,
+.from-month-next,
+.to-month-prev,
+.to-month-next{
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: var(--secondary-clr);
+    cursor: pointer;
+}
+  
+.from-calendar-days,
+.to-calendar-days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+.from-weekday,
+.to-weekday{
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.from-day,
+.to-day{
+    text-align: center;
+    padding: 1rem 0.5rem;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+@media(min-width: 768px){
+    .from-weekday,
+    .to-weekday,
+    .from-day,
+    .to-day{
+        padding: 1rem;
+    }
+}
+  
+.from-day:hover,
+.to-day:hover{
+    background: #ff8500;
+    color: #fff;
+}
+  
